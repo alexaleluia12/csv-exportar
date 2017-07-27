@@ -1,0 +1,63 @@
+
+-- usuario e senha banco local
+create user 'uforex'@'%' identified by '32blazibil83';
+create database dbforex;
+grant all privileges on dbforex.* to  'uforex'@'%';
+
+
+CREATE TABLE diario (
+  `id` BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `currency` VARCHAR(10),
+  `date` DATETIME NOT NULL,
+  `open` FLOAT NOT NULL,
+  `high` FLOAT NOT NULL,
+  `low` FLOAT NOT NULL,
+  `close` FLOAT NOT NULL,
+  `volume` BIGINT NOT NULL
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE sessenta (
+  `id` BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `currency` VARCHAR(10),
+  `date` DATETIME NOT NULL,
+  `open` FLOAT NOT NULL,
+  `high` FLOAT NOT NULL,
+  `low` FLOAT NOT NULL,
+  `close` FLOAT NOT NULL,
+  `volume` BIGINT NOT NULL
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE trinta (
+  `id` BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `currency` VARCHAR(10),
+  `date` DATETIME NOT NULL,
+  `open` FLOAT NOT NULL,
+  `high` FLOAT NOT NULL,
+  `low` FLOAT NOT NULL,
+  `close` FLOAT NOT NULL,
+  `volume` BIGINT NOT NULL
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE quinze (
+  `id` BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `currency` VARCHAR(10),
+  `date` DATETIME NOT NULL,
+  `open` FLOAT NOT NULL,
+  `high` FLOAT NOT NULL,
+  `low` FLOAT NOT NULL,
+  `close` FLOAT NOT NULL,
+  `volume` BIGINT NOT NULL
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE cinco (
+  `id` BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `currency` VARCHAR(10),
+  `date` DATETIME NOT NULL,
+  `open` FLOAT NOT NULL,
+  `high` FLOAT NOT NULL,
+  `low` FLOAT NOT NULL,
+  `close` FLOAT NOT NULL,
+  `volume` BIGINT NOT NULL
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
